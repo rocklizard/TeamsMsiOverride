@@ -40,6 +40,10 @@ The CheckMsiOverride.ps1 script can be deployed in various ways; we will provide
 
 The script is signed, so the user executing the script on each machine will require an execution policy of at least RemoteSigned.
 
+### VDImode Feature ###
+Adds support for CheckMsiOverride script, to be used in a non-persistent setup
+eg: RDS Farm with %localappdata% deleted on logoff
+
 #### Scheduled Task
 To deploy this script as a Scheduled Task you can use the following steps:
 1) [Download](https://github.com/microsoft/TeamsMsiOverride/releases/latest/download/TeamsMsiOverride.zip) the latest version of the script package.
